@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Properties>
+  <Property Name="UserName">
+    <Validator Type="RequiredField" ErrorMessage="UserName is required."/>   
+    <Validator Type="MaxLenField" Max ="15" ErrorMessage="length should be not be greater than 15."/>
+  </Property>
+  
+   <Property Name="Password">
+    <Validator Type="RequiredField" ErrorMessage="Password is required."/>
+   </Property>
+  
+  <Property Name="Email">
+    <Validator Type="RequiredField" ErrorMessage="EmailID is required."/>
+    <Validator Type="MaxLenField" Max ="5" ErrorMessage="length should not be greater than 5."/>
+  </Property>
+  
+  <Property Name="EmailConfirm">
+    <Validator Type="RequiredField" ErrorMessage="Confirm Email ID is required."/>
+    <Validator Type="MaxLenField" Max ="15" ErrorMessage="length should be greater than 15."/>
+  </Property>
+</Properties>
